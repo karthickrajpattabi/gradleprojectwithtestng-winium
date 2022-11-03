@@ -1,0 +1,1 @@
+Powershell.exe -executionpolicy remotesigned -File D:\autotester\scripts\downloadrig.ps1

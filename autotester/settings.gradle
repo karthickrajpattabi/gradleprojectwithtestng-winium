@@ -1,0 +1,5 @@
+rootProject.name = 'autotester'
+include 'reports'
+include 'login'
+include 'desktop'
+

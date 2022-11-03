@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Sample Report Test suite" verbose="1">
+    <test name="Reports Page tests">
+        <classes>
+            <class name="Reports.Reports"/>
+        </classes>
+    </test>
+</suite>

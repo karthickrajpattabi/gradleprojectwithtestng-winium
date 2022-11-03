@@ -1,0 +1,55 @@
+plugins {
+ id 'java'
+ id'io.qameta.allure' version '2.9.6'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+
+allprojects{
+    apply plugin: "java"
+    apply plugin: "io.qameta.allure"
+
+            repositories {
+        mavenCentral()
+    }
+    tasks.withType(Test){
+        println "test task = $project.name";
+        systemProperty "test.single", true
+        scanForTestClasses = false
+    }
+
+}
+
+subprojects{
+
+    dependencies {
+
+        implementation group: 'org.testng', name: 'testng', version: '7.4.0'
+        implementation group: 'com.codeborne', name: 'selenide', version: '6.9.0'
+        implementation group: 'io.qameta.allure', name: 'allure-testng', version: '2.19.0'
+        implementation group: 'io.qameta.allure', name: 'allure-selenide', version: '2.19.0'
+        implementation group: 'org.slf4j', name: 'slf4j-simple', version: '2.0.0'
+        implementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.3.0'
+        implementation group: 'io.qameta.allure', name: 'allure-java-commons', version: '2.19.0'
+        runtimeOnly group: 'org.aspectj', name: 'aspectjweaver', version: '1.9.9.1'
+
+
+
+
+
+
+    }
+
+
+}
+
+project(':reports'){
+    dependencies {
+        implementation project(':login')
+    }
+}
+
+
+

@@ -1,0 +1,18 @@
+
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+
+test {
+
+    useTestNG(){
+        useDefaultListeners = true
+        suites 'src/test/resources/testng.xml'
+    }
+
+}

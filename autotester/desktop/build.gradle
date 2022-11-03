@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/com.github.2gis.winium/winium-webdriver
+    implementation group: 'com.github.2gis.winium', name: 'winium-webdriver', version: '0.1.0-1'
+    // https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java
+    implementation group: 'org.seleniumhq.selenium', name: 'selenium-java', version: '4.1.1'
+    // https://mvnrepository.com/artifact/com.google.guava/guava
+    implementation group: 'com.google.guava', name: 'guava', version: '31.1-jre'
+    // https://mvnrepository.com/artifact/com.codeborne/selenide
+    implementation group: 'com.codeborne', name: 'selenide', version: '6.7.3'
+
+
+
+}
+
+test {
+    useTestNG(){
+        suites 'src/test/resources/testng.xml'
+    }
+    testLogging {
+        events "PASSED","FAILED","SKIPPED"
+    }
+}

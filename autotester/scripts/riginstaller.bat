@@ -1,0 +1,1 @@
+Powershell.exe D:\Users\XXXXXX\Downloads\rigagent-setup-v1.11.3-windows-x64.exe

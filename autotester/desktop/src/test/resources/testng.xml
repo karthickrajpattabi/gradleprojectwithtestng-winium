@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Sample Desktop Test suite" verbose="1">
+    <test name="RIG tests">
+        <classes>
+            <class name="RigInstall"/>
+        </classes>
+    </test>
+</suite>

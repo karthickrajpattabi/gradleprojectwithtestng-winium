@@ -1,0 +1,1 @@
+{"uuid":"43b058ea-009d-468a-9627-1fac847f8e8f","name":"RIG tests","children":["b1434fe7-cf0d-45b9-b54b-fdf5dd44d9b9"],"befores":[],"afters":[{"name":"closedriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1667297589573,"stop":1667297589698}],"start":1667297581693,"stop":1667297589699}
